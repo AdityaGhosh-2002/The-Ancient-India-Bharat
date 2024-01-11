@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  
+  .header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)),
+      url("image/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 8%;
+    position: relative;
+  }
+  
+  .logo{
+    width: 120px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+  
+nav .menu {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav .menu a {
+  width: 25%;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav .menu a:first-child {
+  color: #bbe418;
+}
+
+nav {
+  width: 100%;
+  height: 15vh;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+  
+  .main {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+  }
+  
+  .main h3 {
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+  }
+  
+  .main h1 {
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+  }
+  
+  .main p {
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  .main a {
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+  }
+  
+  .main .btnone {
+    background: #00b894;
+    background: #fff;
+    color: #000;
+  }
+  
+  .btnone:hover {
+    background: #00b894;
+    color: white;
+  }
+  
+  .main .btntwo {
+    background: #00b894;
+    color: white;
+  }
+  
+  .btntwo:hover {
+    background: #00b894;
+    background: #fff;
+    color: #000;
+  }
+  
+  .change_content:after {
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+  }
+  
+  @keyframes changetext {
+    0% {
+      content: "Origin";
+    }
+    14% {
+      content: "Civilizations";
+    }
+    29% {
+      content: "vedic Era";
+    }
+    43% {
+      content: "Ramayana";
+    }
+    58% {
+      content: "Mahabharata";
+    }
+    72% {
+      content: "Islamic Era";
+    }
+
+    87% {
+      content: "British Era";
+    }
+
+    100% {
+      content: "Modern India";
+    }
+  }
+ 
+  /*-------features-------------*/
+
+
+.features{
+  padding: 50px 12px;
+  font-size: 22px;
+  
+  color: #3f0512cd;
+  
+  background-color: rgba(219, 244, 244, 0.836);
+}
+.row{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0px;
+}
+
+.text-col{
+  flex-basis: 45%;
+  margin-bottom: 15px;
+  margin-left: 100px;
+  text-align: justify;;
+  
+}
+
+.img-col{
+  flex-basis: 45%;
+  margin-bottom: 15px;
+  
+  
+
+}
+
+.img-col img{
+  display: block;
+  width: 90%;
+  margin: auto;
+  
+}
+
+.fea1{
+  padding: 30px 10px;
+  font-size: 22px;
+  
+  color: #3f0512cd;
+  
+  background-color: rgba(219, 244, 244, 0.836);
+}
+
+.fea1 .img-col{
+  flex-basis: 27%;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.fea1 .img-col img{
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.fea1 .text-col{
+  flex-basis: 35%;
+  margin-bottom: 15px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.fea1 h2{
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+
+.features h2{
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  
+}
+
+/*---------------------faq-----------------*/
+
+.faq{
+  padding: 10px 12%;
+  text-align: center;
+  font-size: 18px;
+  background-color: rgba(219, 244, 244, 0.836);
+  border-top: #303030;
+}
+
+.faq h2{
+  font-weight: 500;
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+.accordian{
+  margin: 60px auto;
+  width: 100%;
+  max-width: 750px;
+
+}
+
+.accordian li{
+  list-style: none;
+  width: 100%;
+  padding: 5px;
+
+}
+
+.accordian  li label{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  background: #fffafa;
+  margin-bottom: 2px;
+  cursor: pointer;
+  position: relative;
+
+}
+
+label::after{
+  content: '+';
+  font-size: 34px;
+  position: absolute;
+  right: 20px;
+  transition: transform 0.5s;
+  
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+.accordian .content{
+  background: #ffffff;
+  text-align: left;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-heigth 0.5s, padding 0.5s;
+}
+
+.accordian input[type="radio"]:checked + label + .content{
+  max-height: 600px;
+  padding: 30px 20px;
+
+}
+
+.accordian input[type="radio"]:checked + label::after{
+  transform: rotate(135deg);
+}
+
+.faq .email-signup{
+  background: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.faq .email-signup input{
+  flex: 1;
+  border: 0;
+  outline: 0;
+  margin-left: 20px;
+
+}
+
+.faq .email-signup button{
+  background: #db0001;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 15px 30px;
+}
+
+
+.faq .email-signup{
+  max-width: 600px;
+  margin: 20px auto 60px;
+
+}
+
+
+
+.faq .email-signup button:hover{
+  background: #00b894;
+  color: white;
+}
+
+.faq small{
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+
+
+/*------------footer---------------*/
+
+.footer{
+  padding: 50px 15% 10px;
+  border-top: 6px solid #333;
+  color: #777;
+}
+
+.footer h2{
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.footer .col{
+  flex-basis: 25%;
+  flex-grow: 1;
+  margin-bottom: 20px;
+
+}
+
+.footer .col a{
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer .row{
+  align-items: flex-start;
+  padding: 10px 0;
+}
+
+.footer .language-btn{
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 7px 10px;
+  background: #db0001;
+}
+
+.footer .language-btn img{
+  width: 10px;
+  margin-left: 10px;
+}
+
+.footer .language-btn{
+  color: white;
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+
+.copyright-text{
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+}
+
+/*------------------media-quires-for-small-screen------------*/
+
+
+@media only screen and (max-width: 600px){
+  .header .logo{
+      width: 100px;
+  }
+ 
+  nav .menu{
+    padding: 4px 8px;
+  }
+ 
+  .main{
+      position: unset;
+      transform: none;
+      padding-top: 150px;
+
+  }
+  .main h1{
+      font-size: 50px;
+  }
+  .email-signup button{
+      padding: 10px 15px;
+      font-size: 12px;
+  }
+
+  .text-col, .img-col{
+      flex-basis: 100%;
+      margin-right: 50px;
+  }
+
+ 
+
+  .features h2{
+      font-size: 30px;
+      
+  }
+
+  .features p{
+      font-size: 15px;
+  }
+
+  .row:nth-child(2), .row:nth-child(4){
+      flex-direction: column-reverse;
+  }
+  .features .row{
+      padding: 10px 0;
+  }
+
+  .faq h2{
+      font-size: 20px;
+  }
+  .accordian .content{
+      font-size: 14px;
+  
+  }
+
+  .accordian li label{
+      padding: 10px;
+      font-size: 14px;
+  }
+  label::after{
+      font-size: 22px;
+  }
+}
